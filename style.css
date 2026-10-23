@@ -1,0 +1,52 @@
+/*
+Theme Name: Starter Theme
+Theme URI: https://github.com/Azanumer/wp-theme-starter
+Author: Azan Umer
+Author URI: https://github.com/Azanumer
+Description: A clean, minimal starter theme boilerplate for WordPress — semantic HTML5 templates, Customizer settings, widget areas, navigation menus and performance-first enqueues. Built as a learning base and production starting point.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+License: MIT
+Text Domain: starter-theme
+Tags: minimal, starter, boilerplate, custom-menu, custom-logo, featured-images, threaded-comments, translation-ready
+*/
+
+/* Starter styles — the theme ships semantic markup so you can style it freely.
+   Layout below is a simple readable baseline; replace freely. */
+
+:root {
+	--accent: #2563eb;
+	--bg: #ffffff;
+	--fg: #1f2937;
+	--muted: #6b7280;
+	--border: #e5e7eb;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fg);
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	line-height: 1.65;
+	margin: 0;
+}
+
+.site-wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
+.site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+.site-header .site-wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.site-branding a { text-decoration: none; color: var(--fg); font-weight: 700; font-size: 1.35rem; }
+.main-navigation ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.25rem; }
+.main-navigation a { text-decoration: none; color: var(--fg); }
+.main-navigation a:hover { color: var(--accent); }
+.site-content { padding: 2rem 0; }
+.site-footer { border-top: 1px solid var(--border); padding: 1.5rem 0; color: var(--muted); font-size: .9rem; }
+.entry-title a { color: var(--fg); text-decoration: none; }
+.entry-title a:hover { color: var(--accent); }
+.entry-meta, .entry-footer { color: var(--muted); font-size: .85rem; }
+.post-thumbnail img { max-width: 100%; height: auto; border-radius: 4px; }
+.widget-area { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1.5rem; }
+.widget-area .widget { margin-bottom: 1.5rem; }
+img { max-width: 100%; height: auto; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.wp-caption { max-width: 100%; }
